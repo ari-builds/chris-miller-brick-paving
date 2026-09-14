@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1280, height=720" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1280px; height: 720px; overflow: hidden; background: #131009; }
+      .clip { position: absolute; inset: 0; width: 1280px; height: 720px; }
+      .clip img { width: 100%; height: 100%; object-fit: cover; }
+      .brand { position: fixed; right: 44px; bottom: 36px; z-index: 50;
+        font-family: Georgia, serif; color: rgba(255,250,242,.92); text-align: right;
+        text-shadow: 0 2px 14px rgba(0,0,0,.65); }
+      .brand b { font-size: 34px; font-weight: 700; letter-spacing: .01em; }
+      .brand span { display: block; font-family: Arial, sans-serif; font-size: 15px;
+        letter-spacing: .32em; text-transform: uppercase; margin-top: 4px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="57.60" data-width="1280" data-height="720">
+      <div id="c000" class="clip" data-start="0.00" data-duration="1.6" data-track-index="1"><img src="photos/wall1_1.jpg" alt="" /></div>
+      <div id="c160" class="clip" data-start="1.60" data-duration="1.6" data-track-index="1"><img src="photos/wall1_2.jpg" alt="" /></div>
+      <div id="c320" class="clip" data-start="3.20" data-duration="1.6" data-track-index="1"><img src="photos/wall1_5.jpg" alt="" /></div>
+      <div id="c480" class="clip" data-start="4.80" data-duration="1.6" data-track-index="1"><img src="photos/wall1_6.jpg" alt="" /></div>
+      <div id="c640" class="clip" data-start="6.40" data-duration="1.6" data-track-index="1"><img src="photos/wall1_7.jpg" alt="" /></div>
+      <div id="c800" class="clip" data-start="8.00" data-duration="1.6" data-track-index="1"><img src="photos/wall1_8.jpg" alt="" /></div>
+      <div id="c960" class="clip" data-start="9.60" data-duration="1.6" data-track-index="1"><img src="photos/wall1_9.jpg" alt="" /></div>
+      <div id="c1120" class="clip" data-start="11.20" data-duration="1.6" data-track-index="1"><img src="photos/wall1_11.jpg" alt="" /></div>
+      <div id="c1280" class="clip" data-start="12.80" data-duration="1.6" data-track-index="1"><img src="photos/wall2_2.jpg" alt="" /></div>
+      <div id="c1440" class="clip" data-start="14.40" data-duration="1.6" data-track-index="1"><img src="photos/wall2_3.jpg" alt="" /></div>
+      <div id="c1600" class="clip" data-start="16.00" data-duration="1.6" data-track-index="1"><img src="photos/wall2_4.jpg" alt="" /></div>
+      <div id="c1760" class="clip" data-start="17.60" data-duration="1.6" data-track-index="1"><img src="photos/wall2_5.jpg" alt="" /></div>
+      <div id="c1920" class="clip" data-start="19.20" data-duration="1.6" data-track-index="1"><img src="photos/wall2_6.jpg" alt="" /></div>
+      <div id="c2080" class="clip" data-start="20.80" data-duration="1.6" data-track-index="1"><img src="photos/wall2_9.jpg" alt="" /></div>
+      <div id="c2240" class="clip" data-start="22.40" data-duration="1.6" data-track-index="1"><img src="photos/wall2_10.jpg" alt="" /></div>
+      <div id="c2400" class="clip" data-start="24.00" data-duration="1.6" data-track-index="1"><img src="photos/wall2_11.jpg" alt="" /></div>
+      <div id="c2560" class="clip" data-start="25.60" data-duration="1.6" data-track-index="1"><img src="photos/wall2_13.jpg" alt="" /></div>
+      <div id="c2720" class="clip" data-start="27.20" data-duration="1.6" data-track-index="1"><img src="photos/wall3_1.jpg" alt="" /></div>
+      <div id="c2880" class="clip" data-start="28.80" data-duration="1.6" data-track-index="1"><img src="photos/wall3_3.jpg" alt="" /></div>
+      <div id="c3040" class="clip" data-start="30.40" data-duration="1.6" data-track-index="1"><img src="photos/wall3_4.jpg" alt="" /></div>
+      <div id="c3200" class="clip" data-start="32.00" data-duration="1.6" data-track-index="1"><img src="photos/wall3_5.jpg" alt="" /></div>
+      <div id="c3360" class="clip" data-start="33.60" data-duration="1.6" data-track-index="1"><img src="photos/wall3_7.jpg" alt="" /></div>
+      <div id="c3520" class="clip" data-start="35.20" data-duration="1.6" data-track-index="1"><img src="photos/wall3_8.jpg" alt="" /></div>
+      <div id="c3680" class="clip" data-start="36.80" data-duration="1.6" data-track-index="1"><img src="photos/wall4_2.jpg" alt="" /></div>
+      <div id="c3840" class="clip" data-start="38.40" data-duration="1.6" data-track-index="1"><img src="photos/wall4_3.jpg" alt="" /></div>
+      <div id="c4000" class="clip" data-start="40.00" data-duration="1.6" data-track-index="1"><img src="photos/wall4_4.jpg" alt="" /></div>
+      <div id="c4160" class="clip" data-start="41.60" data-duration="1.6" data-track-index="1"><img src="photos/wall4_6.jpg" alt="" /></div>
+      <div id="c4320" class="clip" data-start="43.20" data-duration="1.6" data-track-index="1"><img src="photos/wall4_8.jpg" alt="" /></div>
+      <div id="c4480" class="clip" data-start="44.80" data-duration="1.6" data-track-index="1"><img src="photos/wall4_9.jpg" alt="" /></div>
+      <div id="c4640" class="clip" data-start="46.40" data-duration="1.6" data-track-index="1"><img src="photos/wall4_10.jpg" alt="" /></div>
+      <div id="c4800" class="clip" data-start="48.00" data-duration="1.6" data-track-index="1"><img src="photos/wall4_11.jpg" alt="" /></div>
+      <div id="c4960" class="clip" data-start="49.60" data-duration="1.6" data-track-index="1"><img src="photos/wall4_12.jpg" alt="" /></div>
+      <div id="c5120" class="clip" data-start="51.20" data-duration="1.6" data-track-index="1"><img src="photos/wall4_13.jpg" alt="" /></div>
+      <div id="c5280" class="clip" data-start="52.80" data-duration="1.6" data-track-index="1"><img src="photos/wall4_14.jpg" alt="" /></div>
+      <div id="c5440" class="clip" data-start="54.40" data-duration="1.6" data-track-index="1"><img src="photos/wall4_15.jpg" alt="" /></div>
+      <div id="c5600" class="clip" data-start="56.00" data-duration="1.6" data-track-index="1"><img src="photos/wall4_16.jpg" alt="" /></div>
+      <div class="brand" class="clip" data-start="1.5" data-duration="57.60" data-track-index="2"><b>Chris Miller</b><span>Brick Paver Installer &middot; New England</span></div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#c000 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 0.00);
+      tl.fromTo("#c160 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 1.60);
+      tl.fromTo("#c320 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 3.20);
+      tl.fromTo("#c480 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 4.80);
+      tl.fromTo("#c640 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 6.40);
+      tl.fromTo("#c800 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 8.00);
+      tl.fromTo("#c960 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 9.60);
+      tl.fromTo("#c1120 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 11.20);
+      tl.fromTo("#c1280 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 12.80);
+      tl.fromTo("#c1440 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 14.40);
+      tl.fromTo("#c1600 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 16.00);
+      tl.fromTo("#c1760 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 17.60);
+      tl.fromTo("#c1920 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 19.20);
+      tl.fromTo("#c2080 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 20.80);
+      tl.fromTo("#c2240 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 22.40);
+      tl.fromTo("#c2400 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 24.00);
+      tl.fromTo("#c2560 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 25.60);
+      tl.fromTo("#c2720 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 27.20);
+      tl.fromTo("#c2880 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 28.80);
+      tl.fromTo("#c3040 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 30.40);
+      tl.fromTo("#c3200 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 32.00);
+      tl.fromTo("#c3360 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 33.60);
+      tl.fromTo("#c3520 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 35.20);
+      tl.fromTo("#c3680 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 36.80);
+      tl.fromTo("#c3840 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 38.40);
+      tl.fromTo("#c4000 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 40.00);
+      tl.fromTo("#c4160 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 41.60);
+      tl.fromTo("#c4320 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 43.20);
+      tl.fromTo("#c4480 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 44.80);
+      tl.fromTo("#c4640 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 46.40);
+      tl.fromTo("#c4800 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 48.00);
+      tl.fromTo("#c4960 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 49.60);
+      tl.fromTo("#c5120 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 51.20);
+      tl.fromTo("#c5280 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 52.80);
+      tl.fromTo("#c5440 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 54.40);
+      tl.fromTo("#c5600 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 56.00);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1280, height=720" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1280px; height: 720px; overflow: hidden; background: #131009; }
+      .clip { position: absolute; inset: 0; width: 1280px; height: 720px; }
+      .clip img { width: 100%; height: 100%; object-fit: cover; }
+      .brand { position: fixed; right: 44px; bottom: 36px; z-index: 50;
+        font-family: Georgia, serif; color: rgba(255,250,242,.92); text-align: right;
+        text-shadow: 0 2px 14px rgba(0,0,0,.65); }
+      .brand b { font-size: 34px; font-weight: 700; letter-spacing: .01em; }
+      .brand span { display: block; font-family: Arial, sans-serif; font-size: 15px;
+        letter-spacing: .32em; text-transform: uppercase; margin-top: 4px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="116.80" data-width="1280" data-height="720">
+      <div id="c000" class="clip" data-start="0.00" data-duration="1.6" data-track-index="1"><img src="photos/driveway1_1.jpg" alt="" /></div>
+      <div id="c160" class="clip" data-start="1.60" data-duration="1.6" data-track-index="1"><img src="photos/driveway1_2.jpg" alt="" /></div>
+      <div id="c320" class="clip" data-start="3.20" data-duration="1.6" data-track-index="1"><img src="photos/driveway1_3.jpg" alt="" /></div>
+      <div id="c480" class="clip" data-start="4.80" data-duration="1.6" data-track-index="1"><img src="photos/driveway1_4.jpg" alt="" /></div>
+      <div id="c640" class="clip" data-start="6.40" data-duration="1.6" data-track-index="1"><img src="photos/driveway1_5.jpg" alt="" /></div>
+      <div id="c800" class="clip" data-start="8.00" data-duration="1.6" data-track-index="1"><img src="photos/driveway1_6.jpg" alt="" /></div>
+      <div id="c960" class="clip" data-start="9.60" data-duration="1.6" data-track-index="1"><img src="photos/driveway1_7.jpg" alt="" /></div>
+      <div id="c1120" class="clip" data-start="11.20" data-duration="1.6" data-track-index="1"><img src="photos/driveway1_8.jpg" alt="" /></div>
+      <div id="c1280" class="clip" data-start="12.80" data-duration="1.6" data-track-index="1"><img src="photos/driveway1_11.jpg" alt="" /></div>
+      <div id="c1440" class="clip" data-start="14.40" data-duration="1.6" data-track-index="1"><img src="photos/driveway1_12.jpg" alt="" /></div>
+      <div id="c1600" class="clip" data-start="16.00" data-duration="1.6" data-track-index="1"><img src="photos/driveway1_13.jpg" alt="" /></div>
+      <div id="c1760" class="clip" data-start="17.60" data-duration="1.6" data-track-index="1"><img src="photos/driveway2_1.jpg" alt="" /></div>
+      <div id="c1920" class="clip" data-start="19.20" data-duration="1.6" data-track-index="1"><img src="photos/driveway2_3.jpg" alt="" /></div>
+      <div id="c2080" class="clip" data-start="20.80" data-duration="1.6" data-track-index="1"><img src="photos/driveway2_4.jpg" alt="" /></div>
+      <div id="c2240" class="clip" data-start="22.40" data-duration="1.6" data-track-index="1"><img src="photos/driveway3_3.jpg" alt="" /></div>
+      <div id="c2400" class="clip" data-start="24.00" data-duration="1.6" data-track-index="1"><img src="photos/driveway3_4.jpg" alt="" /></div>
+      <div id="c2560" class="clip" data-start="25.60" data-duration="1.6" data-track-index="1"><img src="photos/driveway4_1.jpg" alt="" /></div>
+      <div id="c2720" class="clip" data-start="27.20" data-duration="1.6" data-track-index="1"><img src="photos/driveway4_2.jpg" alt="" /></div>
+      <div id="c2880" class="clip" data-start="28.80" data-duration="1.6" data-track-index="1"><img src="photos/driveway5_2.jpg" alt="" /></div>
+      <div id="c3040" class="clip" data-start="30.40" data-duration="1.6" data-track-index="1"><img src="photos/driveway5_3.jpg" alt="" /></div>
+      <div id="c3200" class="clip" data-start="32.00" data-duration="1.6" data-track-index="1"><img src="photos/driveway5_4.jpg" alt="" /></div>
+      <div id="c3360" class="clip" data-start="33.60" data-duration="1.6" data-track-index="1"><img src="photos/driveway5_5.jpg" alt="" /></div>
+      <div id="c3520" class="clip" data-start="35.20" data-duration="1.6" data-track-index="1"><img src="photos/driveway6_2.jpg" alt="" /></div>
+      <div id="c3680" class="clip" data-start="36.80" data-duration="1.6" data-track-index="1"><img src="photos/driveway6_3.jpg" alt="" /></div>
+      <div id="c3840" class="clip" data-start="38.40" data-duration="1.6" data-track-index="1"><img src="photos/driveway7_1.jpg" alt="" /></div>
+      <div id="c4000" class="clip" data-start="40.00" data-duration="1.6" data-track-index="1"><img src="photos/driveway7_3.jpg" alt="" /></div>
+      <div id="c4160" class="clip" data-start="41.60" data-duration="1.6" data-track-index="1"><img src="photos/driveway7_4.jpg" alt="" /></div>
+      <div id="c4320" class="clip" data-start="43.20" data-duration="1.6" data-track-index="1"><img src="photos/driveway7_5.jpg" alt="" /></div>
+      <div id="c4480" class="clip" data-start="44.80" data-duration="1.6" data-track-index="1"><img src="photos/driveway7_6.jpg" alt="" /></div>
+      <div id="c4640" class="clip" data-start="46.40" data-duration="1.6" data-track-index="1"><img src="photos/driveway7_7.jpg" alt="" /></div>
+      <div id="c4800" class="clip" data-start="48.00" data-duration="1.6" data-track-index="1"><img src="photos/driveway7_8.jpg" alt="" /></div>
+      <div id="c4960" class="clip" data-start="49.60" data-duration="1.6" data-track-index="1"><img src="photos/driveway7_9.jpg" alt="" /></div>
+      <div id="c5120" class="clip" data-start="51.20" data-duration="1.6" data-track-index="1"><img src="photos/driveway7_10.jpg" alt="" /></div>
+      <div id="c5280" class="clip" data-start="52.80" data-duration="1.6" data-track-index="1"><img src="photos/driveway7_11.jpg" alt="" /></div>
+      <div id="c5440" class="clip" data-start="54.40" data-duration="1.6" data-track-index="1"><img src="photos/driveway8_1.jpg" alt="" /></div>
+      <div id="c5600" class="clip" data-start="56.00" data-duration="1.6" data-track-index="1"><img src="photos/driveway8_2.jpg" alt="" /></div>
+      <div id="c5760" class="clip" data-start="57.60" data-duration="1.6" data-track-index="1"><img src="photos/driveway8_3.jpg" alt="" /></div>
+      <div id="c5920" class="clip" data-start="59.20" data-duration="1.6" data-track-index="1"><img src="photos/driveway8_4.jpg" alt="" /></div>
+      <div id="c6080" class="clip" data-start="60.80" data-duration="1.6" data-track-index="1"><img src="photos/driveway9_3.jpg" alt="" /></div>
+      <div id="c6240" class="clip" data-start="62.40" data-duration="1.6" data-track-index="1"><img src="photos/driveway9_5.jpg" alt="" /></div>
+      <div id="c6400" class="clip" data-start="64.00" data-duration="1.6" data-track-index="1"><img src="photos/driveway9_7.jpg" alt="" /></div>
+      <div id="c6560" class="clip" data-start="65.60" data-duration="1.6" data-track-index="1"><img src="photos/driveway10_1.jpg" alt="" /></div>
+      <div id="c6720" class="clip" data-start="67.20" data-duration="1.6" data-track-index="1"><img src="photos/driveway10_2.jpg" alt="" /></div>
+      <div id="c6880" class="clip" data-start="68.80" data-duration="1.6" data-track-index="1"><img src="photos/driveway10_3.jpg" alt="" /></div>
+      <div id="c7040" class="clip" data-start="70.40" data-duration="1.6" data-track-index="1"><img src="photos/driveway10_4.jpg" alt="" /></div>
+      <div id="c7200" class="clip" data-start="72.00" data-duration="1.6" data-track-index="1"><img src="photos/driveway10_5.jpg" alt="" /></div>
+      <div id="c7360" class="clip" data-start="73.60" data-duration="1.6" data-track-index="1"><img src="photos/driveway10_6.jpg" alt="" /></div>
+      <div id="c7520" class="clip" data-start="75.20" data-duration="1.6" data-track-index="1"><img src="photos/driveway10_8.jpg" alt="" /></div>
+      <div id="c7680" class="clip" data-start="76.80" data-duration="1.6" data-track-index="1"><img src="photos/driveway11_1.jpg" alt="" /></div>
+      <div id="c7840" class="clip" data-start="78.40" data-duration="1.6" data-track-index="1"><img src="photos/driveway11_3.jpg" alt="" /></div>
+      <div id="c8000" class="clip" data-start="80.00" data-duration="1.6" data-track-index="1"><img src="photos/driveway11_4.jpg" alt="" /></div>
+      <div id="c8160" class="clip" data-start="81.60" data-duration="1.6" data-track-index="1"><img src="photos/driveway11_5.jpg" alt="" /></div>
+      <div id="c8320" class="clip" data-start="83.20" data-duration="1.6" data-track-index="1"><img src="photos/driveway11_7.jpg" alt="" /></div>
+      <div id="c8480" class="clip" data-start="84.80" data-duration="1.6" data-track-index="1"><img src="photos/driveway11_8.jpg" alt="" /></div>
+      <div id="c8640" class="clip" data-start="86.40" data-duration="1.6" data-track-index="1"><img src="photos/driveway11_9.jpg" alt="" /></div>
+      <div id="c8800" class="clip" data-start="88.00" data-duration="1.6" data-track-index="1"><img src="photos/driveway11_10.jpg" alt="" /></div>
+      <div id="c8960" class="clip" data-start="89.60" data-duration="1.6" data-track-index="1"><img src="photos/driveway11_11.jpg" alt="" /></div>
+      <div id="c9120" class="clip" data-start="91.20" data-duration="1.6" data-track-index="1"><img src="photos/driveway12_1.jpg" alt="" /></div>
+      <div id="c9280" class="clip" data-start="92.80" data-duration="1.6" data-track-index="1"><img src="photos/driveway12_3.jpg" alt="" /></div>
+      <div id="c9440" class="clip" data-start="94.40" data-duration="1.6" data-track-index="1"><img src="photos/driveway12_4.jpg" alt="" /></div>
+      <div id="c9600" class="clip" data-start="96.00" data-duration="1.6" data-track-index="1"><img src="photos/driveway12_5.jpg" alt="" /></div>
+      <div id="c9760" class="clip" data-start="97.60" data-duration="1.6" data-track-index="1"><img src="photos/driveway13_1.jpg" alt="" /></div>
+      <div id="c9920" class="clip" data-start="99.20" data-duration="1.6" data-track-index="1"><img src="photos/driveway13_2.jpg" alt="" /></div>
+      <div id="c10080" class="clip" data-start="100.80" data-duration="1.6" data-track-index="1"><img src="photos/driveway13_4.jpg" alt="" /></div>
+      <div id="c10240" class="clip" data-start="102.40" data-duration="1.6" data-track-index="1"><img src="photos/driveway13_5.jpg" alt="" /></div>
+      <div id="c10400" class="clip" data-start="104.00" data-duration="1.6" data-track-index="1"><img src="photos/driveway14_1.jpg" alt="" /></div>
+      <div id="c10560" class="clip" data-start="105.60" data-duration="1.6" data-track-index="1"><img src="photos/driveway14_2.jpg" alt="" /></div>
+      <div id="c10720" class="clip" data-start="107.20" data-duration="1.6" data-track-index="1"><img src="photos/driveway15_3.jpg" alt="" /></div>
+      <div id="c10880" class="clip" data-start="108.80" data-duration="1.6" data-track-index="1"><img src="photos/driveway15_4.jpg" alt="" /></div>
+      <div id="c11040" class="clip" data-start="110.40" data-duration="1.6" data-track-index="1"><img src="photos/driveway15_5.jpg" alt="" /></div>
+      <div id="c11200" class="clip" data-start="112.00" data-duration="1.6" data-track-index="1"><img src="photos/driveway15_6.jpg" alt="" /></div>
+      <div id="c11360" class="clip" data-start="113.60" data-duration="1.6" data-track-index="1"><img src="photos/driveway15_7.jpg" alt="" /></div>
+      <div id="c11520" class="clip" data-start="115.20" data-duration="1.6" data-track-index="1"><img src="photos/driveway15_8.jpg" alt="" /></div>
+      <div class="brand" class="clip" data-start="1.5" data-duration="116.80" data-track-index="2"><b>Chris Miller</b><span>Brick Paver Installer &middot; New England</span></div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#c000 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 0.00);
+      tl.fromTo("#c160 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 1.60);
+      tl.fromTo("#c320 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 3.20);
+      tl.fromTo("#c480 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 4.80);
+      tl.fromTo("#c640 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 6.40);
+      tl.fromTo("#c800 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 8.00);
+      tl.fromTo("#c960 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 9.60);
+      tl.fromTo("#c1120 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 11.20);
+      tl.fromTo("#c1280 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 12.80);
+      tl.fromTo("#c1440 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 14.40);
+      tl.fromTo("#c1600 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 16.00);
+      tl.fromTo("#c1760 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 17.60);
+      tl.fromTo("#c1920 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 19.20);
+      tl.fromTo("#c2080 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 20.80);
+      tl.fromTo("#c2240 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 22.40);
+      tl.fromTo("#c2400 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 24.00);
+      tl.fromTo("#c2560 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 25.60);
+      tl.fromTo("#c2720 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 27.20);
+      tl.fromTo("#c2880 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 28.80);
+      tl.fromTo("#c3040 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 30.40);
+      tl.fromTo("#c3200 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 32.00);
+      tl.fromTo("#c3360 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 33.60);
+      tl.fromTo("#c3520 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 35.20);
+      tl.fromTo("#c3680 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 36.80);
+      tl.fromTo("#c3840 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 38.40);
+      tl.fromTo("#c4000 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 40.00);
+      tl.fromTo("#c4160 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 41.60);
+      tl.fromTo("#c4320 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 43.20);
+      tl.fromTo("#c4480 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 44.80);
+      tl.fromTo("#c4640 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 46.40);
+      tl.fromTo("#c4800 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 48.00);
+      tl.fromTo("#c4960 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 49.60);
+      tl.fromTo("#c5120 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 51.20);
+      tl.fromTo("#c5280 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 52.80);
+      tl.fromTo("#c5440 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 54.40);
+      tl.fromTo("#c5600 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 56.00);
+      tl.fromTo("#c5760 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 57.60);
+      tl.fromTo("#c5920 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 59.20);
+      tl.fromTo("#c6080 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 60.80);
+      tl.fromTo("#c6240 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 62.40);
+      tl.fromTo("#c6400 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 64.00);
+      tl.fromTo("#c6560 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 65.60);
+      tl.fromTo("#c6720 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 67.20);
+      tl.fromTo("#c6880 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 68.80);
+      tl.fromTo("#c7040 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 70.40);
+      tl.fromTo("#c7200 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 72.00);
+      tl.fromTo("#c7360 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 73.60);
+      tl.fromTo("#c7520 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 75.20);
+      tl.fromTo("#c7680 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 76.80);
+      tl.fromTo("#c7840 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 78.40);
+      tl.fromTo("#c8000 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 80.00);
+      tl.fromTo("#c8160 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 81.60);
+      tl.fromTo("#c8320 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 83.20);
+      tl.fromTo("#c8480 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 84.80);
+      tl.fromTo("#c8640 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 86.40);
+      tl.fromTo("#c8800 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 88.00);
+      tl.fromTo("#c8960 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 89.60);
+      tl.fromTo("#c9120 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 91.20);
+      tl.fromTo("#c9280 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 92.80);
+      tl.fromTo("#c9440 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 94.40);
+      tl.fromTo("#c9600 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 96.00);
+      tl.fromTo("#c9760 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 97.60);
+      tl.fromTo("#c9920 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 99.20);
+      tl.fromTo("#c10080 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 100.80);
+      tl.fromTo("#c10240 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 102.40);
+      tl.fromTo("#c10400 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 104.00);
+      tl.fromTo("#c10560 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 105.60);
+      tl.fromTo("#c10720 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 107.20);
+      tl.fromTo("#c10880 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 108.80);
+      tl.fromTo("#c11040 img", { opacity: 0, scale: 1.22, x: "3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 110.40);
+      tl.fromTo("#c11200 img", { opacity: 0, scale: 1.25, y: "-3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 112.00);
+      tl.fromTo("#c11360 img", { opacity: 0, scale: 1.25, y: "3%" }, { opacity: 1, scale: 1, y: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 113.60);
+      tl.fromTo("#c11520 img", { opacity: 0, scale: 1.22, x: "-3.2%" }, { opacity: 1, scale: 1, x: "0%", duration: 1.4000000000000001, ease: "power2.out" }, 115.20);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
