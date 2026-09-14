@@ -39,14 +39,6 @@ button { font-family: inherit; cursor: pointer; }
 .fade { opacity: 0; transform: translateY(14px); transition: opacity .7s ease, transform .7s ease; }
 .fade.in { opacity: 1; transform: none; }
 
-/* ---- announce ---- */
-.announce a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
-.announce a:hover { color: #ffd9a8; }
-.announce { background: var(--brick-deep); color: #fdf3ea; text-align: center; }
-.announce .inner { display: flex; justify-content: center; gap: .5rem; padding-top: .45rem; padding-bottom: .45rem; font-size: .85rem; letter-spacing: .1em; }
-.announce b { font-weight: 500; }
-.announce a:hover { color: #ffd9a8; }
-
 /* ---- top nav ---- */
 .top {
   position: sticky; top: 0; z-index: 30;

@@ -12,15 +12,6 @@
     }
 
     /* ---- header ---- */
-    var announce = document.createElement("div");
-    announce.className = "announce";
-    announce.innerHTML =
-      '<div class="inner">' +
-      '<a href="contact.html">Free Estimates</a><b>&middot;</b>' +
-      '<span>Fully Insured</span><b>&middot;</b>' +
-      '<span>5-Year Paver Installation Warranty</span>' +
-      "</div>";
-
     var header = document.createElement("header");
     header.className = "top";
     var here = document.body.getAttribute("data-page") || "home";
@@ -128,7 +119,6 @@
       "</div>";
 
     document.body.insertBefore(ctaBar, document.body.firstChild);
-    document.body.insertBefore(announce, document.body.firstChild);
     document.body.insertBefore(header, document.body.firstChild);
     document.body.appendChild(menu);
     document.body.appendChild(footer);
