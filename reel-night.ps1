@@ -13,9 +13,11 @@ Get-CimInstance Win32_Process -ErrorAction SilentlyContinue |
   ForEach-Object { try { Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue; L "killed stale render pid $($_.ProcessId)" } catch { } }
 
 & powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $root "render-reels.ps1") 2>&1 | ForEach-Object { L $_ }
+& powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $root "ai-enhance-all.ps1") 2>&1 | ForEach-Object { L $_ }
 
 Push-Location $root
 node reel-hub.js    2>&1 | ForEach-Object { L $_ }
+node rebuild-thumbs.js 2>&1 | ForEach-Object { L $_ }
 node generate-galleries.js 2>&1 | ForEach-Object { L $_ }
 node verify-pages.js 2>&1 | ForEach-Object { L $_ }
 node check-resources.js 2>&1 | ForEach-Object { L $_ }
