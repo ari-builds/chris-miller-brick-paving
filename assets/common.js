@@ -25,9 +25,7 @@
       '<div class="top-ph">' +
       '<span class="pwhy">Serving New England</span>' +
       '<a href="tel:' + tel + '">' + phone + "</a>" +
-      '<a class="btn btn-call" href="contact.html">Free estimate</a>' +
       "</div>" +
-      '<a class="btn btn-cta mobile-est" href="contact.html">Free estimate</a>' +
       '<button class="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu">' +
       "<span></span><span></span><span></span>" +
       "</button>" +
