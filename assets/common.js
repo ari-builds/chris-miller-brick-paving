@@ -16,7 +16,7 @@
     announce.className = "announce";
     announce.innerHTML =
       '<div class="inner">' +
-      '<span class="tick">Free Estimates</span><b>&middot;</b>' +
+      '<a href="contact.html">Free Estimates</a><b>&middot;</b>' +
       '<span>Fully Insured</span><b>&middot;</b>' +
       '<span>5-Year Paver Installation Warranty</span>' +
       "</div>";
@@ -36,6 +36,7 @@
       '<a href="tel:' + tel + '">' + phone + "</a>" +
       '<a class="btn btn-call" href="contact.html">Free estimate</a>' +
       "</div>" +
+      '<a class="btn btn-cta mobile-est" href="contact.html">Free estimate</a>' +
       '<button class="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu">' +
       "<span></span><span></span><span></span>" +
       "</button>" +
@@ -45,7 +46,7 @@
     ctaBar.className = "cta-bar";
     ctaBar.id = "ctaBar";
     ctaBar.innerHTML =
-      'Call Chris for a free estimate &nbsp;<b>' + phone + "</b> <span aria-hidden='true'>&#8594;</span>";
+      '<a href="tel:' + tel + '">Call Chris for a free estimate &nbsp;<b>' + phone + "</b> <span aria-hidden='true'>&#8594;</span></a>";
 
     var menu = document.createElement("div");
     menu.className = "menu";
@@ -165,7 +166,7 @@
     var shown = false;
     function onScroll() {
       header.classList.toggle("scrolled", window.scrollY > 8);
-      if (!shown && window.scrollY > 260) {
+      if (!shown && window.scrollY > 120) {
         shown = true;
         cta.classList.add("in");
       }
