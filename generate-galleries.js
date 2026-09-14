@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const { hasReel, reel } = require("./reel-block");
 
 const ROOT = __dirname;
 const PHOTO = path.join(ROOT, "assets", "photos");
@@ -56,7 +57,7 @@ function esc(s) {
     .replace(/"/g, "&quot;");
 }
 
-const HEAD = (title, desc, canon, h1, lead) => `<!DOCTYPE html>
+const HEAD = (title, desc, canon, h1, lead, reelHtml) => `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -114,7 +115,7 @@ const HEAD = (title, desc, canon, h1, lead) => `<!DOCTYPE html>
         <p class="lead fade">${esc(lead)}</p>
       </div>
     </section>
-
+    ${reelHtml}
     <section class="section-block">
       <div class="section">
         <div class="photos fade" id="photos">`;
@@ -177,7 +178,7 @@ for (const cat of CATS) {
     )
     .join("\n        ");
 
-  const page = HEAD(cat.title, desc, `gallery-${cat.id}.html`, cat.h1, cat.lead) + imgHtml + TAIL;
+  const page = HEAD(cat.title, desc, `gallery-${cat.id}.html`, cat.h1, cat.lead, hasReel(cat.id) ? reel(cat.id, { kicker: "Watch the work" }) : "") + imgHtml + TAIL;
   const out = path.join(ROOT, `gallery-${cat.id}.html`);
   fs.writeFileSync(out, page, "utf8");
   totalPages++;
