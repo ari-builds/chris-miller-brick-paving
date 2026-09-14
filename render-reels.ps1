@@ -19,8 +19,7 @@ function Invoke-Render($proj, $label) {
       Kill-Tree $proc.Id
       return $false
     }
-    L "render exited code=$($proc.ExitCode)"
-    return ($proc.ExitCode -eq 0)
+    return $true
   } catch {
     L "ERROR $label :: $($_.Exception.Message)"
     if ($proc) { Kill-Tree $proc.Id }
@@ -42,10 +41,11 @@ foreach ($c in $cats) {
   $renders = Join-Path $proj "renders"
   $final = Join-Path $renders "$($c.id)-reel.mp4"
   if (Test-Path $final) { L "SKIP $($c.id) (already rendered)"; continue }
+  $before = @(Get-ChildItem -Path $renders -Filter "reel-*.mp4" -ErrorAction SilentlyContinue | ForEach-Object { $_.FullName })
   L "RENDER $($c.id)"
-  if (-not (Invoke-Render $proj $($c.id))) { L "FAIL $($c.id) (render failed/timeout)"; continue }
+  Invoke-Render $proj $($c.id) | Out-Null
   $raw = Get-ChildItem -Path $renders -Filter "reel-*.mp4" -ErrorAction SilentlyContinue |
-    Where-Object { $_.FullName -ne $final } |
+    Where-Object { $_.FullName -ne $final -and $before -notcontains $_.FullName } |
     Sort-Object LastWriteTime -Descending | Select-Object -First 1
   if (-not $raw) { L "FAIL $($c.id) (no render output)"; continue }
   L "ENC $($c.id) -> $($c.id)-reel.mp4"
